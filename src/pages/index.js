@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image"
+import {Box, Heading, Link, Paragraph} from 'theme-ui'
 
 const pageStyles = {
     width: "100%",
@@ -11,6 +12,7 @@ const pageStyles = {
 const profilePictureStyle = {
     marginLeft: "2em",
     width: "20%",
+    borderRadius: "50%",
     verticalAlign: "middle",
 }
 
@@ -52,13 +54,14 @@ const IndexPage = () => {
             <h1>Aleksander Andresen 💻</h1>
             <StaticImage
                 alt="Very professional picture of me"
-                src={"../images/square.png"} style={profilePictureStyle}/>
-            <p>Hi there <br/>
-                I'm a passionate full-stack software engineer from Norway 🇳🇴
-            </p>
-
-
-            <h2>Some of my favorite technologies</h2>
+                src={"../images/windy.jpg"} style={profilePictureStyle}/>
+            <Box>
+            <Paragraph>Hi there <br/>
+                I'm a passionate full-stack software engineer from Norway 🇳🇴 <br/>
+                Check out one of my <Link href="https://advice.moe">hobby projects</Link>
+            </Paragraph>
+            </Box>
+            <Heading>Some of my favorite technologies</Heading>
             {technologies.map(tech => (
                     <div>
                         <h3>{tech.name}</h3>

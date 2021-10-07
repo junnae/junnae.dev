@@ -6,9 +6,6 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-theme-ui`,
-      options: {
-        preset: "@theme-ui/preset-deep",
-      },
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

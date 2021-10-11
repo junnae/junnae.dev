@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Heading, Paragraph} from "theme-ui";
+import {Alert, Box, Flex, Heading, Message} from "theme-ui";
 
 const jobs = [
     {
@@ -22,39 +22,50 @@ const jobs = [
                 customer: "NAV",
                 from: "January 2018",
                 to: "July 2021",
+                description: "I did some stuff",
             },
             {
                 customer: "Vipps",
                 from: "August 2021",
                 to: "",
+                description: "xx yy zz"
             }
         ]
     },
 ]
 
-
 const Experience = () => {
     return (
-        <div>
-            <Heading>Experience</Heading>
-            {
-                jobs.map(job => (
-                    <div>
-                        <h3>{job.title} at {job.name} ({job.from} - {job.to})</h3>
-                        <Paragraph>
-                            {job.description}
-                        </Paragraph>
-                        {
-                            job.projects.map(project => (
-                                <div>
-                                    <h3>{project.customer} ({project.from} - {project.to})</h3>
-                                </div>
-                            ))
-                        }
-                    </div>
-                ))
-            }
-        </div>
+        <Flex sx={{
+            flexDirection: 'column',
+            alignItems: 'center',
+            alignContent: 'center',
+            textAlign: 'justify',
+            //maxHeight: '700px',
+        }}>
+            <Box><Heading>Experience</Heading>
+                {
+                    jobs.map(job => (
+                        <Box>
+                            <Alert>{job.title} at {job.name} ({job.from} - {job.to})</Alert>
+                            <Message>
+                                {job.description}
+                                {
+                                    job.projects.map(project => (
+                                        <Box>
+                                            <br/>
+                                            <Alert>{project.customer} ({project.from} - {project.to})</Alert>
+                                            <Message>{project.description}</Message>
+                                        </Box>
+                                    ))
+                                }
+                            </Message>
+                            <br/>
+                        </Box>
+                    ))
+                }
+            </Box>
+        </Flex>
     )
 }
 

@@ -1,8 +1,7 @@
 // noinspection InvisibleCharacter
 
 import * as React from "react"
-import {Divider} from 'theme-ui'
-import Header from "../components/header";
+import Header from "../components/Header";
 import Footer from "../components/footer";
 import MainContent from "../components/MainContent";
 
@@ -16,7 +15,6 @@ const pageStyles = {
     minHeight: '100vh'
 }
 
-// markup
 const IndexPage = () => {
     return (
         <main style={pageStyles} id="outer-container">
@@ -31,4 +29,4 @@ const IndexPage = () => {
     )
 };
 
-export default IndexPage
+export default {IndexPage}

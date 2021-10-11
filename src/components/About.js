@@ -28,6 +28,7 @@ const About = () => {
             <Paragraph sx={{textAlign: 'left'}}>
                 Hey there!<br/>
                 I'm a passionate full-stack software engineer from Norway 🇳🇴 <br/>
+                Feel free to check out my github, and reach out
                 Check out one of my <a href="https://advice.moe" style={linkStyle}>hobby projects</a>
             </Paragraph>
             <StaticImage

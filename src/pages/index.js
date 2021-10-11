@@ -1,32 +1,31 @@
 // noinspection InvisibleCharacter
 
 import * as React from "react"
-import {Divider, Spinner} from 'theme-ui'
+import {Divider} from 'theme-ui'
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Menu from "../components/menu";
 import MainContent from "../components/MainContent";
 
 const pageStyles = {
     width: "100%",
+    maxWidth: "100%",
+    overflowX: "hidden",
     textAlign: "center",
+    position: "relative",
+    height: '100%',
+    minHeight: '100vh'
 }
-
-
-
 
 // markup
 const IndexPage = () => {
     return (
-        <main style={pageStyles}>
+        <main style={pageStyles} id="outer-container">
             <title>Resume</title>
             <meta charSet="utf-8"/>
             <Header/>
-            <Divider/>
-            <MainContent/>
-            <Divider/>
-            <Menu/>
-            <Divider/>
+            <div id="main-content">
+                <MainContent/>
+            </div>
             <Footer/>
         </main>
     )

@@ -1,4 +1,4 @@
-import {Heading} from "theme-ui";
+import {Alert, Box, Flex, Heading, Message} from "theme-ui";
 import * as React from "react";
 import Certifications from "./Certifications";
 
@@ -23,17 +23,29 @@ const technologies = [
 
 export default function Tech() {
     return (
-        <div>
-            <Heading>Some of my favorite technologies</Heading>
+        <Flex sx={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            gap: '20px',
+            maxHeight: '700px',
+        }}>
+            <Box>
+            <Heading>Some favorite technologies</Heading>
             {
                 technologies.map(tech => (
                     <div>
-                        <h3>{tech.name}</h3>
-                        <p>{tech.description}</p>
+                        <Alert>{tech.name}</Alert>
+                        <Message>{tech.description}</Message>
+                        <br/>
                     </div>
                 ))
             }
+            </Box>
+            <Box>
             <Certifications/>
-        </div>
+            </Box>
+        </Flex>
     )
 }

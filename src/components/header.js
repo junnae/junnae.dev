@@ -1,7 +1,11 @@
 import * as React from "react";
+import Menu from "./menu";
 
 export default function () {
     return (
-        <h1>Aleksander Andresen 💻</h1>
+        <div>
+            <h1>Aleksander Andresen 💻</h1>
+            <Menu/>
+        </div>
     )
 }

@@ -1,4 +1,4 @@
-import Intro from "./Intro";
+import About from "./About";
 import Tech from "./Tech";
 import {Router} from "@reach/router";
 import * as React from "react";
@@ -11,7 +11,7 @@ const contentStyles = {
 const MainContent = () => {
     return (
         <Router style={contentStyles}>
-            <Intro path="/"/>
+            <About path="/"/>
             <Tech path="/tech/"/>
             <Experience path="/experience/"/>
         </Router>

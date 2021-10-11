@@ -1,4 +1,4 @@
-import {Heading} from "theme-ui";
+import {Alert, Box, Heading} from "theme-ui";
 import * as React from "react";
 
 const certfications = [
@@ -18,7 +18,10 @@ const Certifications = () => {
             <Heading>Certifications</Heading>
             {
                 certfications.map(cert => (
-                    <h3>{cert.name}</h3>
+                    <Box>
+                    <Alert>{cert.name}</Alert>
+                    <br/>
+                    </Box>
                 ))
             }
         </div>

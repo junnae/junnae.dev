@@ -32,7 +32,7 @@ export default function Tech() {
             maxHeight: '700px',
         }}>
             <Box>
-            <Heading>Some favorite technologies</Heading>
+            <Heading>Favorite tech</Heading>
             {
                 technologies.map(tech => (
                     <div>

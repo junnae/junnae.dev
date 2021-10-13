@@ -4,7 +4,7 @@ import Menu from "./menu";
 export default function () {
     return (
         <div>
-            <h1>Aleksander Andresen 💻</h1>
+            <h1>Aleksander 💻</h1>
             <Menu/>
         </div>
     )

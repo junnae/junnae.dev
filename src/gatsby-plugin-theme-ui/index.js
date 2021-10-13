@@ -12,7 +12,7 @@ const theme = {
             fontSize: '5',
         },
     },
-    buttons:{
+    buttons: {
         menu: {
             color: 'secondary'
         }

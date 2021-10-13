@@ -3,6 +3,8 @@ import {StaticImage} from "gatsby-plugin-image";
 import * as React from "react";
 import {getColor} from "@theme-ui/color";
 import theme from "../gatsby-plugin-theme-ui";
+import {faEnvelope, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 const profilePictureStyle = {
@@ -26,10 +28,10 @@ const About = () => {
             maxWidth: '100vw',
         }}>
             <Paragraph sx={{textAlign: 'left'}}>
-                Hey there!<br/>
+                Hi there, I'm Aleksander!<br/>
                 I'm a passionate full-stack software engineer from Norway 🇳🇴 <br/>
-                Feel free to check out my github, and reach out
-                Check out one of my <a href="https://advice.moe" style={linkStyle}>hobby projects</a>
+                Feel free to check out my work <br/>
+                You can contact me at <a href="mailto: post@junnae.dev" style={linkStyle}>post@junnae.dev <FontAwesomeIcon icon={faEnvelope}/></a>
             </Paragraph>
             <StaticImage
                 alt="Very professional picture of me"

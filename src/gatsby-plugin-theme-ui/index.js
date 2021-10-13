@@ -19,7 +19,7 @@ const theme = {
         }
     },
     fonts: {
-        //body: "Roboto"
+        body: "Roboto"
     }
 }
 export default theme

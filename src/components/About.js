@@ -37,7 +37,7 @@ const About = () => {
             </Paragraph>
             <StaticImage
                 alt="Very professional picture of me"
-                src="../images/old.jpg" style={profilePictureStyle}
+                src="../images/garden.jpg" style={profilePictureStyle}
                 layout="constrained"
                 height='700'
             />

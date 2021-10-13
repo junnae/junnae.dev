@@ -1,4 +1,5 @@
 import {deep} from "@theme-ui/presets";
+import "@fontsource/roboto/300.css"
 
 const theme = {
     ...deep,
@@ -16,6 +17,9 @@ const theme = {
         menu: {
             color: 'secondary'
         }
+    },
+    fonts: {
+        //body: "Roboto"
     }
 }
 export default theme

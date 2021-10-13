@@ -6,7 +6,6 @@ import Experience from "./Experience";
 
 const contentStyles = {
     textAlign: "left",
-    marginTop: '5%',
     padding: '2%',
 }
 

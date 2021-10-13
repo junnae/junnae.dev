@@ -60,7 +60,7 @@ const Experience = () => {
                 <Box>
                     <Alert>Hobby project(s)</Alert>
                     <Message>
-                        <a href="https://advice.moe" style={linkStyle}>advice.moe <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
+                        <a href="https://advice.moe" style={linkStyle}>advice.moe<FontAwesomeIcon icon={faExternalLinkAlt}/></a>
                         <a href={"https://github.com/junnae/anime-wisdom"} style={linkStyle}> {'\u00A0'} (GitHub)<FontAwesomeIcon icon={faGithub}/></a>
                     </Message>
                     <br/>

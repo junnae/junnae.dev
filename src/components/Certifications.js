@@ -31,8 +31,9 @@ const Certifications = () => {
             {
                 certfications.map(cert => (
                     <Box>
-                        {(cert.link != null) &&
+                        { ((cert.link != null) &&
                         <a href={cert.link} style={linkStyle}> <Alert>{cert.name}{'\u00A0'}<FontAwesomeIcon icon={faExternalLinkAlt}/> </Alert></a>
+                        )
                         || <Alert>{cert.name}</Alert>
                         }
                         <br/>

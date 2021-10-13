@@ -32,8 +32,8 @@ const About = () => {
             <Paragraph sx={{textAlign: 'left'}}>
                 Hi there, I'm Aleksander!<br/>
                 I'm a passionate full-stack software engineer from Norway 🇳🇴 <br/>
-                Feel free to check out my<a href={"https://github.com/junnae"} style={linkStyle}> GitHub {'\u00A0'}<FontAwesomeIcon icon={faGithub}/></a> <br/>
-                You can contact me at <a href="mailto: post@junnae.dev" style={linkStyle}>post@junnae.dev <FontAwesomeIcon icon={faEnvelope}/></a>
+                Feel free to check out my<a href={"https://github.com/junnae"} style={linkStyle}> {'\u00A0'} <FontAwesomeIcon icon={faGithub}/> GitHub</a> <br/>
+                You can contact me at <a href="mailto: post@junnae.dev" style={linkStyle}><FontAwesomeIcon icon={faEnvelope} />post@junnae.dev</a>
             </Paragraph>
             <StaticImage
                 alt="Very professional picture of me"

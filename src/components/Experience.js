@@ -27,7 +27,7 @@ const jobs = [
                 customer: "NAV (Norwegian Labour and Welfare Administration)",
                 from: "January 2018",
                 to: "July 2021",
-                description: `Development and design of solutions for Parental and Sick Benefits. \n
+                description: `Development and design of solutions for Parental and Sick Benefits. Lots of code available on GitHub \n
                  Leveraged microservices architecture to create scalable kotlin applications communicating asynchronously using kafka. \n
                  Created React-based frontends mainly for case workers. \n
                  Set up of pipelines and dashboards for monitoring of production. 
@@ -55,14 +55,13 @@ const Experience = () => {
             alignItems: 'center',
             alignContent: 'center',
             textAlign: 'justify',
-            //maxHeight: '700px',
         }}>
             <Box><Heading>Experience</Heading>
                 <Box>
                     <Alert>Hobby project(s)</Alert>
                     <Message>
                         <a href="https://advice.moe" style={linkStyle}>advice.moe <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
-                        <a href={"https://github.com/junnae/anime-wisdom"} style={linkStyle}> {'\u00A0'} (Github)<FontAwesomeIcon icon={faGithub}/></a>
+                        <a href={"https://github.com/junnae/anime-wisdom"} style={linkStyle}> {'\u00A0'} (GitHub)<FontAwesomeIcon icon={faGithub}/></a>
                     </Message>
                     <br/>
                 </Box>

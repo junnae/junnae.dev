@@ -13,7 +13,7 @@ const technologies = [
     },
     {
         name: "Devops",
-        description: "Docker, Kubernetes, Github Actions"
+        description: "Docker, Kubernetes, GitHub Actions"
     },
     {
         name: "Other",
@@ -29,7 +29,6 @@ export default function Tech() {
             justifyContent: 'center',
             alignItems: 'flex-start',
             gap: '20px',
-            maxHeight: '700px',
         }}>
             <Box>
             <Heading>Favorite tech</Heading>

@@ -13,13 +13,14 @@ const burgerStyles = {
         width: '36px',
         height: '30px',
         left: '36px',
-        top: '36px'
+        top: '36px',
+        backgroundColor: getColor(theme, 'background'),
     },
     bmBurgerBars: {
-        //background: '#373a47'
+        background: getColor(theme, 'background')
     },
     bmBurgerBarsHover: {
-        //background: '#a90000'
+        background: '#a90000'
     },
     bmCrossButton: {
         height: '24px',

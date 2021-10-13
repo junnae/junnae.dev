@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Alert, Box, Flex, Heading, Message} from "theme-ui";
+import {Alert, Box, Flex, Heading, Message, Paragraph} from "theme-ui";
 import {getColor} from "@theme-ui/color";
 import theme from "../gatsby-plugin-theme-ui";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -9,11 +9,11 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons";
 const jobs = [
     {
         name: "CGI",
-        title: "Consultant",
+        title: "\"Consultant\"",
         from: "March 2016",
         to: "December 2017",
         description: "I worked with test management, automated testing and development. " +
-            "I created internal tools used daily for test management",
+            "I created and designed internal tools used daily for test management",
         projects: [],
     },
     {
@@ -21,26 +21,30 @@ const jobs = [
         title: "Software Engineer",
         from: "January 2018",
         to: "",
-        description: "Working as a consultant for Sopra Steria's customers",
+        description: "Consultant for Sopra Steria's customers",
         projects: [
             {
-                customer: "NAV",
+                customer: "NAV (Norwegian Labour and Welfare Administration)",
                 from: "January 2018",
                 to: "July 2021",
-                description: "I did some stuff",
+                description: `Development and design of solutions for Parental and Sick Benefits. \n
+                 Leveraged microservices architecture to create scalable kotlin applications communicating asynchronously using kafka. \n
+                 Created React-based frontends mainly for case workers. \n
+                 Set up of pipelines and dashboards for monitoring of production. 
+                 `,
             },
             {
                 customer: "Vipps",
                 from: "August 2021",
                 to: "",
-                description: "xx yy zz"
+                description: "Development and design of Java applications for the national payment system in Norway"
             }
         ]
     },
 ]
 
 const linkStyle = {
-    color: getColor(theme, 'text'),
+    color: getColor(theme, 'secondary'),
     textDecoration: 'none',
 }
 
@@ -55,7 +59,7 @@ const Experience = () => {
         }}>
             <Box><Heading>Experience</Heading>
                 <Box>
-                    <Alert>Hobby project</Alert>
+                    <Alert>Hobby project(s)</Alert>
                     <Message>
                         <a href="https://advice.moe" style={linkStyle}>advice.moe <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
                         <a href={"https://github.com/junnae/anime-wisdom"} style={linkStyle}> {'\u00A0'} (Github)<FontAwesomeIcon icon={faGithub}/></a>
@@ -73,7 +77,9 @@ const Experience = () => {
                                         <Box>
                                             <br/>
                                             <Alert>{project.customer} ({project.from} - {project.to})</Alert>
-                                            <Message>{project.description}</Message>
+                                            <Message>{project.description.split('\n').map( line=>
+                                                <Paragraph>{line}</Paragraph>
+                                            )}</Message>
                                         </Box>
                                     ))
                                 }
